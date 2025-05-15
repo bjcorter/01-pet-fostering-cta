@@ -1,0 +1,148 @@
+/* Style for the CTA banner with background image */
+.cta-banner {
+  background-image: url('img/cta-bg.jpg'); /* Set the background image */
+  background-size: cover; /* Ensure the image covers the entire banner */
+  background-position: center; /* Center the image */
+  position: relative; /* Position for overlay */
+  color: white; /* White text for contrast */
+  text-align: center; /* Center-align text */
+  padding: 120px 20px; /* Increase vertical padding to expand the banner */
+  font-family: Arial, sans-serif; /* Modern, easy-to-read font */
+}
+
+/* Overlay to darken the background image */
+.cta-banner::before {
+  content: ''; /* Empty content for the overlay */
+  position: absolute; /* Position overlay over the banner */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire banner */
+  height: 100%; /* Cover the entire banner */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: 1; /* Place below text */
+}
+
+/* Ensure text appears above the overlay */
+.cta-banner h1,
+.cta-banner p,
+.cta-banner .cta-button {
+  position: relative;
+  z-index: 2; /* Place above the overlay */
+}
+
+/* Style for the main heading */
+.cta-banner h1 {
+  font-size: 3.5em; /* Large font size for emphasis */
+  margin-bottom: 20px; /* Space below the heading */
+  margin-top: 10px; /* Reduce space above the heading */
+}
+
+/* Style for the description */
+.cta-banner p {
+  font-size: 1.2em; /* Slightly larger text for readability */
+  margin-bottom: 30px; /* Space below the description */
+}
+
+/* Style for the call-to-action button */
+.cta-button {
+  background-color: #0288d1; /* Bright blue for the button */
+  color: white; /* White text for contrast */
+  text-decoration: none; /* Remove underline */
+  padding: 15px 30px; /* Add padding for a button-like appearance */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  font-size: 1em; /* Standard font size */
+}
+
+/* Add hover effect for the button */
+.cta-button:hover {
+  background-color: #0277bd; /* Slightly darker blue on hover */
+}
+
+/* Style for the site header */
+.site-header {
+  background-color: #006064; /* Dark teal background for contrast */
+  color: white; /* White text for readability */
+  text-align: center; /* Center-align text */
+  padding: 20px 0; /* Add vertical spacing */
+  font-family: Arial, sans-serif; /* Consistent font with the banner */
+}
+
+/* Style for the header text */
+.site-header h1 {
+  font-size: 1.8em; /* Slightly smaller than the banner heading */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for the information section */
+.info-section {
+  display: table; /* Use table layout for simple column alignment */
+  width: 90%; /* Reduce width slightly for better alignment */
+  margin: 20px auto; /* Reduce margin for better centering */
+  font-family: Arial, sans-serif; /* Consistent font */
+}
+
+/* Style for the image */
+.info-section img {
+  display: table-cell; /* Align image in one column */
+  width: 80%; /* Take up half the section width */
+  vertical-align: middle; /* Vertically center the image */
+  padding: 5px; /* Reduce padding to bring the image closer to the text */
+  border-radius: 15px;
+}
+
+/* Style for the text */
+.info-section .info-text {
+  display: table-cell; /* Align text in the other column */
+  width: 50%; /* Take up half the section width */
+  padding: 10px; /* Reduce padding for better alignment with the image */
+  text-align: left; /* Align text to the left */
+  vertical-align: middle; /* Vertically center the text */
+}
+
+/* Style for the heading in the info section */
+.info-section h2 {
+  font-size: 2em; /* Larger font size for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+  color: #006064; /* Dark teal for consistency */
+}
+
+/* Style for the paragraph in the info section */
+.info-section p {
+  font-size: 1.2em; /* Slightly larger text for readability */
+  line-height: 1.5; /* Add spacing between lines */
+  color: #333; /* Dark gray for readability */
+}
+
+/* Style for the contact section */
+.contact-section {
+  background-color: #e0f7fa; /* Light teal background for consistency */
+  color: #006064; /* Dark teal text for readability */
+  text-align: center; /* Center-align text */
+  padding: 40px 20px; /* Add spacing for a balanced layout */
+  font-family: Arial, sans-serif; /* Consistent font with the rest of the page */
+}
+
+/* Style for the heading in the contact section */
+.contact-section h2 {
+  font-size: 2.5em; /* Larger font size for emphasis */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Style for the paragraph in the contact section */
+.contact-section p {
+  font-size: 1.2em; /* Slightly larger text for readability */
+  margin-bottom: 20px; /* Space below the paragraph */
+  line-height: 1.5; /* Add spacing between lines */
+}
+
+/* Style for the list in the contact section */
+.contact-section ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.contact-section ul li {
+  font-size: 1.1em; /* Slightly larger text for readability */
+  margin-bottom: 10px; /* Space between list items */
+}
